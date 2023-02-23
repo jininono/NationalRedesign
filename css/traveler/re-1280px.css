@@ -10,10 +10,6 @@
 		padding: 25px 0 20px 0;
 	}
 
-	.sidebar_inner .logo img {
-		width: 120px;
-	}
-
 	/*search*/
 	.search_inner {
 		position: absolute;
@@ -24,23 +20,30 @@
 	/*sidebar*/
 	.sidebar_btn {
 		position: absolute;
+		display: block;
 		right: 0;
-		top: 40px;
+		top: 33px;
+		width: 25px;
+		height: 20px;
+	}
+
+	.sidebar_inner .logo img {
+		width: 120px;
+	}
+
+	.sidebar_inner .close {
+		position: absolute;
+		top: 30px;
+		right: -7px;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
 	}
 
 	.sidebar_inner #sidebar_gnb {
 		position: absolute;
 		top: 110px;
 		right: 0px;
-	}
-
-	.sidebar_inner .close {
-		position: absolute;
-		top: 30px;
-		right: 5px;
-		width: 30px;
-		height: 30px;
-		cursor: pointer;
 	}
 
 	/*main*/

@@ -13,44 +13,11 @@
 	/*sidebar*/
 	.sidebar_btn {
 		position: absolute;
+		display: block;
 		right: 0;
-		top: 28px;
-	}
-
-	/*sideba*/
-	input[id="line"] + label {
-	    display: block;
-	    width: 17px;
-	    cursor:pointer;
-	}
-
-	input[id="line"] + label > span {
-	    display: block;
-	    height: 2px;
-	    width: 100%;
-	    background-color: #ffdb00;
-	}
-
-	input[id="line"] + label > span:nth-child(1) {
-	    top:0;
-	    transform:translateY(-8px);
-	}
-
-	input[id="line"] + label > span:nth-child(2) {
-	    top:0;
-	    transform:translateY(-4px);
-	}
-
-	input[id="line"] + label > span:nth-child(3) {
-	    bottom:0;
-	    transform:translateX(7px);
-	    width: 10px;
-	}
-
-	.sidebar_inner {
-		position: relative;
-		max-width: 89vw;
-		margin: 0 auto;
+		top: 20px;
+		width: 20px;
+		height: 16px;
 	}
 
 	.sidebar_inner .logo img {
@@ -62,28 +29,11 @@
 
 	.sidebar_inner .close {
 		position: absolute;
-		top: 18px;
-		right: 0px;
-		width: 20px;
-		height: 20px;
+		top: 17px;
+		right: -9px;
+		width: 30px;
+		height: 30px;
 		cursor: pointer;
-	}
-
-	.sidebar_inner .close:before, .close:after {
-		  position: absolute;
-		  left: 5px;
-		  content: ' ';
-		  height: 20px;
-		  width: 2px;
-		  background-color: #ffdb00;
-	}
-
-	.sidebar_inner .close:before {
-		  transform: rotate(45deg);
-	}
-
-	.sidebar_inner .close:after {
-		  transform: rotate(-45deg);
 	}
 
 	.sidebar_inner #sidebar_gnb {
@@ -92,7 +42,7 @@
 		right: 0px;
 	}
 
-	#sidebar_gnb > li > a {
+	#sidebar_gnb>li>a {
 		display: inline-block;
 		width: 100%;
 		padding-bottom: 15px;
@@ -104,12 +54,13 @@
 
 	/*scroll*/
 	.scroll-downs {
-	  display: none;
+		display: none;
 	}
 
 	/*main*/
 	main {
-		padding-top: 58px; /*header값*/
+		padding-top: 58px;
+		/*header값*/
 	}
 
 	/*section*/
@@ -200,5 +151,5 @@
 		padding-bottom: 7px;
 	}
 
-	
+
 }

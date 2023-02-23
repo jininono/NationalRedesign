@@ -18,38 +18,19 @@
 	/*sidebar*/
 	.sidebar_btn {
 		position: absolute;
+		display: block;
 		right: 0;
-		top: 33px;
+		top: 26px;
+		width: 20px;
+		height: 16px;
 	}
 
-	/*sideba*/
-	input[id="line"] + label {
-	    display: block;
-	    width: 20px;
-	    cursor:pointer;
-	}
-
-	input[id="line"] + label > span {
-	    display: block;
-	    height: 2.5px;
-	    width: 100%;
-	    background-color: #ffdb00;
-	}
-
-	input[id="line"] + label > span:nth-child(1) {
-	    top:0;
-	    transform:translateY(-8px);
-	}
-
-	input[id="line"] + label > span:nth-child(2) {
-	    top:0;
-	    transform:translateY(-4px);
-	}
-
-	input[id="line"] + label > span:nth-child(3) {
-	    bottom:0;
-	    transform:translateX(10px);
-	    width: 10px;
+	.sidebar_btn button::after {
+		width: 60%;
+		content: '';
+		display: block;
+		top: 12px;
+		transition: all 0.3s;
 	}
 
 	.sidebar_inner .logo img {
@@ -57,24 +38,27 @@
 		position: absolute;
 		left: 0;
 		top: 20px;
+		/*header logo padding-top 값*/
 	}
 
 	.sidebar_inner .close {
 		position: absolute;
 		top: 23px;
-		right: 0px;
-		width: 25px;
-		height: 25px;
+		right: -9px;
+		width: 30px;
+		height: 30px;
 		cursor: pointer;
 	}
 
-	.sidebar_inner .close:before, .close:after {
-	  position: absolute;
-	  left: 7px;
-	  content: ' ';
-	  height: 25px;
-	  width: 2.5px;
-	  background-color: #ffdb00;
+	.sidebar_inner .close:before,
+	.close:after {
+		position: absolute;
+		left: 10px;
+		content: ' ';
+		height: 21px;
+		width: 3px;
+		background-color: #ffdb00;
+		border-radius: 2px;
 	}
 
 	.sidebar_inner #sidebar_gnb {
@@ -87,10 +71,11 @@
 	main {
 		width: 100%;
 		height: auto;
-		margin-top: 138px;/*68px은 헤더 값*/
+		margin-top: 138px;
+		/*68px은 헤더 값*/
 	}
 
-	main > .inner > .title {
+	main>.inner>.title {
 		margin: 0 auto;
 		font-family: 'Roboto', sans-serif;
 		font-size: calc(1.69vw + 13.66px);
@@ -163,7 +148,7 @@
 		font-size: calc(1.52vw + 4.29px);
 		line-height: 1.9;
 		background-color: #000;
-		color: #fff; 
+		color: #fff;
 		position: absolute;
 		padding: 0 25px 20px;
 		right: 0px;
@@ -215,7 +200,8 @@
 		margin-right: 0px;
 	}
 
-	#sect02 .content_wrap .content_box:nth-of-type(1), .img_box:nth-of-type(2) {
+	#sect02 .content_wrap .content_box:nth-of-type(1),
+	.img_box:nth-of-type(2) {
 		margin-bottom: 50px;
 	}
 

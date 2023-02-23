@@ -14,9 +14,28 @@
 		width: 120px;
 		padding: 25px 0 20px 0;
 	}
+	
+	/*sidebar*/
+	.sidebar_btn {
+		position: absolute;
+		display: block;
+		right: 0;
+		top: 33px;
+		width: 25px;
+		height: 20px;
+	}
 
 	.sidebar_inner .logo img {
 		width: 120px;
+	}
+
+	.sidebar_inner .close {
+		position: absolute;
+		top: 30px;
+		right: -7px;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
 	}
 
 	.sidebar_inner #sidebar_gnb {

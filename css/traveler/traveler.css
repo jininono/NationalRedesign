@@ -289,41 +289,60 @@ header .logo img {
 /*sidebar*/
 .sidebar_btn {
 	position: absolute;
+	display: block;
 	right: 0;
-	top: 45px;
+	top: 36px;
+	width: 25px;
+	height: 20px;
 }
 
-input[id="line"] {
-    display: none;
+.sidebar_btn button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+	text-indent: -9999em;
 }
 
-input[id="line"] + label {
-    display: block;
-    width: 25px;
-    cursor:pointer;
+.sidebar_btn button::before {
+	width: 100%;
+	content: '';
+	display: block;
+	top: 0;
+	transition: all 0.3s;
 }
 
-input[id="line"] + label > span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background-color: #ffdb00;
+.sidebar_btn button span {
+	display: block;
+	width: 100%;
+	top: 50%;
+	margin-top: -2px;
+	opacity: 1;
+	transition: all 0.3s;
 }
 
-input[id="line"] + label > span:nth-child(1) {
-    top:0;
-    transform:translateY(-10px);
+.sidebar_btn button::after {
+	width: 60%;
+	content: '';
+	display: block;
+	top: 16px;
+	transition: all 0.3s;
 }
 
-input[id="line"] + label > span:nth-child(2) {
-    top:0;
-    transform:translateY(-5px);
-}
-
-input[id="line"] + label > span:nth-child(3) {
-    bottom:0;
-    transform:translateX(10px);
-    width: 15px;
+.sidebar_btn button span,
+.sidebar_btn button::before,
+.sidebar_btn button::after {
+	border-radius: 2px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	height: 3px;
+	background: #ffdb00;
 }
 
 #sidebar {
@@ -344,7 +363,7 @@ input[id="line"] + label > span:nth-child(3) {
 
 .sidebar_inner {
 	position: relative;
-	width: 89vw;
+	max-width: 89vw;
 	margin: auto;
 }
 
@@ -352,13 +371,13 @@ input[id="line"] + label > span:nth-child(3) {
 	width: 140px;
 	position: absolute;
 	left: 0;
-	top: 25px;
+	top: 25px; /*header logo padding-top 값*/
 }
 
 .sidebar_inner .close {
 	position: absolute;
-	top: 35px;
-	right: 5px;
+	top: 33px;
+	right: -7px;
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
@@ -366,11 +385,12 @@ input[id="line"] + label > span:nth-child(3) {
 
 .sidebar_inner .close:before, .close:after {
 	  position: absolute;
-	  left: 20px;
+	  left: 10px;
 	  content: ' ';
 	  height: 25px;
 	  width: 3px;
 	  background-color: #ffdb00;
+	  border-radius: 2px;
 }
 
 .sidebar_inner .close:before {
