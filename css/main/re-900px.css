@@ -27,12 +27,13 @@
 		top: 12px;
 		transition: all 0.3s;
 	}
-	
+
 	.sidebar_inner .logo img {
 		width: 110px;
 		position: absolute;
 		left: 0;
-		top: 20px; /*header logo padding-top 값*/
+		top: 20px;
+		/*header logo padding-top 값*/
 	}
 
 	.sidebar_inner .close {
@@ -44,7 +45,8 @@
 		cursor: pointer;
 	}
 
-	.sidebar_inner .close:before, .close:after {
+	.sidebar_inner .close:before,
+	.close:after {
 		position: absolute;
 		left: 10px;
 		content: ' ';
@@ -52,7 +54,7 @@
 		width: 3px;
 		background-color: #ffdb00;
 		border-radius: 2px;
-  	}
+	}
 
 	.sidebar_inner #sidebar_gnb {
 		position: absolute;
@@ -94,7 +96,7 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: center top;
-		filter: brightness(70%); 
+		filter: brightness(70%);
 	}
 
 	/*section*/

@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    color: #1f1f1f;
-    font-family: 'Noto Sans KR', sans-serif;
+	color: #1f1f1f;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 .clearfix::after {
@@ -120,14 +120,14 @@ header .logo img {
 
 #sidebar {
 	position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background: url(../../img/nav.png)no-repeat center center;
-    background-size: cover;
-    z-index: 101;
-    transition: all 0.3s;
+	top: 0;
+	right: -100%;
+	width: 100%;
+	height: 100%;
+	background: url(../../img/nav.png)no-repeat center center;
+	background-size: cover;
+	z-index: 101;
+	transition: all 0.3s;
 }
 
 #sidebar.on {
@@ -144,7 +144,8 @@ header .logo img {
 	width: 140px;
 	position: absolute;
 	left: 0;
-	top: 25px; /*header logo padding-top 값*/
+	top: 25px;
+	/*header logo padding-top 값*/
 }
 
 .sidebar_inner .close {
@@ -156,22 +157,23 @@ header .logo img {
 	cursor: pointer;
 }
 
-.sidebar_inner .close:before, .close:after {
-	  position: absolute;
-	  left: 10px;
-	  content: ' ';
-	  height: 25px;
-	  width: 3px;
-	  background-color: #ffdb00;
-	  border-radius: 2px;
+.sidebar_inner .close:before,
+.close:after {
+	position: absolute;
+	left: 10px;
+	content: ' ';
+	height: 25px;
+	width: 3px;
+	background-color: #ffdb00;
+	border-radius: 2px;
 }
 
 .sidebar_inner .close:before {
-	  transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .sidebar_inner .close:after {
-	  transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 .sidebar_inner #sidebar_gnb {
@@ -180,7 +182,7 @@ header .logo img {
 	right: 0px;
 }
 
-#sidebar_gnb > li > a {
+#sidebar_gnb>li>a {
 	display: inline-block;
 	width: 100%;
 	padding-bottom: 20px;
@@ -190,7 +192,7 @@ header .logo img {
 	color: #fff;
 }
 
-#sidebar_gnb > li > a:hover {
+#sidebar_gnb>li>a:hover {
 	color: #ffdb00;
 }
 
@@ -224,7 +226,7 @@ header .logo img {
 	height: 100%;
 	object-fit: cover;
 	object-position: center top;
-	filter: brightness(70%); 
+	filter: brightness(70%);
 }
 
 #main_visual .text_wrap {
@@ -336,12 +338,12 @@ section {
 
 .section_title2:before {
 	position: absolute;
-    content: "";
-    top: 19%;
-    left: -10px;
-    height: 60%;
-    width: 3px;
-    background: #ffdb00;
+	content: "";
+	top: 19%;
+	left: -10px;
+	height: 60%;
+	width: 3px;
+	background: #ffdb00;
 }
 
 #sect01 .text {
@@ -551,7 +553,7 @@ section {
 	position: absolute;
 	width: 100%;
 	height: 90vh;
-	background: rgba(0,0,0,0.2);
+	background: rgba(0, 0, 0, 0.2);
 	left: 0px;
 	top: 0px;
 }
@@ -587,7 +589,7 @@ section {
 }
 
 footer {
-	position: relative; 
+	position: relative;
 	width: 100%;
 	height: auto;
 	background-color: #111;
@@ -678,6 +680,3 @@ footer .bottom_wrap p {
 	line-height: 1.4;
 	color: #ccc;
 }
-
-
-

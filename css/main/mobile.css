@@ -52,7 +52,7 @@
 		right: 0px;
 	}
 
-	#sidebar_gnb > li > a {
+	#sidebar_gnb>li>a {
 		display: inline-block;
 		width: 100%;
 		padding-bottom: 15px;
@@ -190,12 +190,12 @@
 
 	.section_title2:before {
 		position: absolute;
-	    content: "";
-	    top: 19%;
-	    left: -7px;
-	    height: 60%;
-	    width: 2px;
-	    background: #ffdb00;
+		content: "";
+		top: 19%;
+		left: -7px;
+		height: 60%;
+		width: 2px;
+		background: #ffdb00;
 	}
 
 	/*sect02*/
@@ -333,7 +333,7 @@
 		position: absolute;
 		width: 100%;
 		height: 370px;
-		background: rgba(0,0,0,0.2);
+		background: rgba(0, 0, 0, 0.2);
 		left: 0px;
 		top: 0px;
 	}
