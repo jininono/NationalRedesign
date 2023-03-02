@@ -145,10 +145,17 @@
 		margin-top: 25px;
 	}
 
-	#sect03 #prev,
-	#sect03 #next {
+	#sect03 #prev {
 		position: absolute;
 		left: 0;
+		top: 35%;
+		z-index: 10;
+		cursor: pointer;
+	}
+
+	#sect05 #next {
+		position: absolute;
+		right: 0;
 		top: 35%;
 		z-index: 10;
 		cursor: pointer;
