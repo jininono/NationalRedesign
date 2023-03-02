@@ -654,18 +654,13 @@ section .txt {
 	font-size: 35px;
 }
 
-#sect05 #prev {
+#sect05 #prev,
+#sect05 #next {
 	position: absolute;
 	left: 0;
 	top: 40%;
 	z-index: 10;
-}
-
-#sect05 #next {
-	position: absolute;
-	right: 0;
-	top: 40%;
-	z-index: 10;
+	cursor: pointer;
 }
 
 /*footer*/

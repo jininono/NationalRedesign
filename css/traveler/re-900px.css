@@ -262,20 +262,6 @@
 		font-size: 30px;
 	}
 
-	#sect05 #prev {
-		position: absolute;
-		left: 0;
-		top: 40%;
-		z-index: 10;
-	}
-
-	#sect05 #next {
-		position: absolute;
-		right: 0;
-		top: 40%;
-		z-index: 10;
-	}
-
 	/*footer*/
 	footer .left_wrap .logo_icon img {
 		width: 110px;
