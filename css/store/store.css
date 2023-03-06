@@ -498,8 +498,8 @@ header .logo img {
 }
 
 /*main*/
-main {
-	padding-top: 93px;
+#fullpage {
+	margin-top: 93px;
 	/*header값*/
 }
 

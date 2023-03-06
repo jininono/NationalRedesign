@@ -68,8 +68,8 @@
 	}
 
 	/*main*/
-	main {
-		padding-top: 68px;
+	#fullpage  {
+		margin-top: 68px;
 		/*header값*/
 	}
 
